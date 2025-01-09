@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+HR+Lijeva:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+*, html, body{
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  height: 100vh;
+  font-family: "Montserrat", serif;
+}
+
+.nav-Container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+}
+
+h1 {
+  color: #8EC5FC ;
+}
+
+.nav-List, ul, li, a {
+  display: flex;
+  gap: 2rem;
+  text-decoration: none;
+  list-style-type: none;
+  color: black;
+}
+
+
+/*AKHIR NAV */
+
+.hom-Container {
+  display: flex;
+  justify-content: space-evenly ;
+  align-items: center;
+  height: 100vh;
+  color: white;
+  background-color: #8EC5FC;
+  background-image: linear-gradient(130deg, #8EC5FC 0%, #E0C3FC 100%);
+  background-size: 300%;
+  animation: bg 5s infinite alternate;
+}
+
+@keyframes bg {
+  0% {
+    background-position: left;
+  }
+  
+  100% {
+    background-position: right;
+  }
+}
+
+.img-home {
+  display: flex;
+  justify-content: center;
+  height: auto;
+  width: 200px;
+  margin-bottom: 80px;
+}
+
+.Nama {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.Nama p {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 40px;
+}
+
+.Nama h4 {
+  font-size: 50px;
+}
+
+button {
+  display: flex;
+  justify-content: center;
+  width: 300px ;
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 20px;
+  border: none;
+  color: white;
+  background-color: #369bff;
+  background-image: linear-gradient(130deg, #369bff 0%, #b868ff 100%);
+
+}
+
+
+
+
+/*AKHIR HOME */
+
+
+.Pembungkus {
+  padding: 100px;
+  height: 100%;
+  background-color: #eaeaea;
+}
+
+.p {
+  font-size: 35px;
+  margin-bottom: 50px;
+}
+
+.abo-Container h6 {
+  font-size: 80px;
+}
+
+.abo-Container hr {
+  border: solid 1px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.detail-skill div {
+  display: flex;
+  align-items: center;
+  border: solid 1px;
+  width: 50%;
+  margin-top: 50px;
+  height: 50px;
+  border-radius: 50px;
+}
+
+.detail-skill p {
+  display: flex;
+  align-items: center;
+  border: solid 1px;
+  border-radius: 50px;
+  padding-left: 15px;
+  font-size: 20px;
+  color: white;
+  background-color: #369bff;
+  background-image: linear-gradient(130deg, #369bff 0%, #b868ff 100%);
+}
+
+.p1 {
+  width: 600px;
+  height: 50px;
+  animation: p1 ease both;
+  animation-timeline: view();
+  animation-range: entry 50% cover 50%;
+}
+
+.p2 {
+  width: 380px;
+  height: 50px;
+  animation: p2 5s ease both;
+  animation-timeline: view();
+  animation-range: entry 50% cover 50%;
+}
+
+.p3 {
+  width: 200px;
+  height: 50px;
+  animation: p3 5s ease both;
+   animation-timeline: view();
+  animation-range: entry 50% cover 50%;
+}
+
+
+@keyframes p1 {
+  from {
+    width: 0px;
+  }
+  
+  to {
+    width: 600px;
+  }
+}
+
+@keyframes p2 {
+  from {
+    width: 0px;
+  }
+  
+  to {
+    width: 380px;
+  }
+}
+
+@keyframes p3 {
+  from {
+    width: 0px;
+  }
+  
+  to {
+    width: 200px;
+  }
+}
+
+
+
+
+/*AKHIR ABOUT*/
+
+.proj-Container {
+  
+}
+
+.proj-Container h6 {
+  margin-top: 350px;
+  font-size: 80px;
+}
+
+.proj-Container hr {
+  border: solid 1px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.detail-Proj {
+  display: flex;
+ text-align: center;
+  justify-content: space-evenly;
+}
+
+.detail-Proj div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  height: 300px;
+  border-radius: 24px;
+  border: solid 2px;
+  background-color: white;
+}
+
+.detail-Proj div img {
+  border-radius: 55px;
+}
+
+.div1 img {
+  padding: 20px;
+  height: auto;
+  width: 258px;
+}
+
+.div2 img {
+  padding: 25px;
+  height: 158px;
+  width: 250px;
+}
+
+.div3 img {
+  padding: 25px;
+  height: 158px;
+  width: 250px;
+}
+
+
+
+
+/*AKHIR PROJECT*/
+
+
+
+.con-Container h6 {
+  margin-top: 350px;
+  font-size: 80px;
+}
+
+.con-Container hr {
+  border: solid 1px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.detail-con {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  margin-bottom: 200px;
+}
+
+.detail-con button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 800px ;
+  height: 100px;
+  padding: 10px;
+  padding-left: 50px;
+  font-size: 30px;
+  border-radius: 20px;
+  border: none;
+  color: white;
+  background-color: #369bff;
+  background-image: linear-gradient(130deg, #369bff 0%, #b868ff 100%);
+}
+
+.detail-con button div {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+  padding-right: 50px;
+}
+
+
+/*AKHIR CONTACT*/
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 150px;
+}
+
+.footer p {
+  font-size: 25px;
+}
+
+
+
